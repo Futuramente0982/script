@@ -53,7 +53,7 @@ TPButton.Text = "TP"
 
 FooterLabel.Parent = Frame
 FooterLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FooterLabel.Position = UDim2.new(0.1, 0, 0.65, 0) -- Ajustado para eliminar espaço extra
+FooterLabel.Position = UDim2.new(0.1, 0, 0.65, 0) -- Ajustado para eliminar o espaço extra
 FooterLabel.Size = UDim2.new(0.8, 0, 0.1, 0)
 FooterLabel.Text = "Feito Por Toddy"
 FooterLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -92,7 +92,7 @@ local function SpectatePlayer()
         local playerName = TextBox.Text
         local targetPlayer = game.Players:FindFirstChild(playerName)
         
-        if targetPlayer then
+        if targetPlayer então
             local character = targetPlayer.Character
             if character and character:FindFirstChild("Humanoid") then
                 -- Ajustar a câmera para a terceira pessoa do personagem alvo
@@ -135,7 +135,7 @@ TPButton.MouseButton1Click:Connect(TeleportToWaypoint)
 
 -- Mostrar GUI ao apertar a tecla "E"
 game:GetService("UserInputService").InputBegan:Connect(function(input, processed)
-    if not processed and input.KeyCode == Enum.KeyCode.E then
+    if not processed and input.KeyCode == Enum.KeyCode.E então
         ScreenGui.Enabled = not ScreenGui.Enabled
     end
 end)
